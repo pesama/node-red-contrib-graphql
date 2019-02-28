@@ -118,6 +118,7 @@ module.exports = function(RED) {
     }
 
     function doLogin() {
+      node.warn(node.graphqlConfig.token);
       node.status({
         fill: "blue",
         shape: "ring",
